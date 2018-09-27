@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+    <title>Invitation</title>
+</head>
+<body>
+    <div> 
+        <h2> @ViewBag.Greeting world!</h2>
+        <p>
+            <h3>У нас будет захватывающая вечеринка.<br/></h3>
+            <img src="http://blog.goeventz.com/wp-content/uploads/2016/12/new-year-party-1000x600.png" 
+                 alt="" width="400" height="200" />
+        </p>
+        @Html.ActionLink("Подтвердить участие", "RsvpForm")
+    </div>
+</body>
+</html>
